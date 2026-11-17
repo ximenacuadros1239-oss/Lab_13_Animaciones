@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
                         1 -> Ejercicio2()
                         2 -> Ejercicio3()
                         3 -> Ejercicio4()
-                        // else -> EjercicioFinal()
+                        else -> EjercicioFinal()
                     }
                 }
             }
