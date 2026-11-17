@@ -34,8 +34,8 @@ fun Ejercicio3() {
         Spacer(Modifier.height(24.dp))
         Box(
             Modifier
-                .offset(x = desplazamiento, y = desplazamiento / 2)
                 .size(tamano)
+                .offset(x = desplazamiento, y = desplazamiento / 2)
                 .background(Color(0xFFFF9800), RoundedCornerShape(12.dp))
         )
     }
