@@ -22,13 +22,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 
 @Composable
 fun Ejercicio2() {
     var azul by remember { mutableStateOf(true) }
     val color by animateColorAsState(
         targetValue = if (azul) Color(0xFF2196F3) else Color(0xFF4CAF50),
-        animationSpec = tween(durationMillis = 800),
+        animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy),
         label = "color"
     )
 
